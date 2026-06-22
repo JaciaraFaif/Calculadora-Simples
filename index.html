@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CalcStyle.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Calculadora Simples </title>
+</head>
+<body>
+    <div id = "Calc">
+        <input id="display" readonly> <!-- SO para leitura-->
+        <div id="keys">
+            <button onclick="ToDisplay('7')">7</button>
+            <button onclick="ToDisplay('8')">8</button>
+            <button onclick="ToDisplay('9')">9</button>
+            <button onclick="ToDisplay('/')"Class="CordosOperadores">/</button>
+            <button onclick="ToDisplay('4')">4</button>
+            <button onclick="ToDisplay('5')">5</button>
+            <button onclick="ToDisplay('6')">6</button>
+            <button onclick="ToDisplay('*')"Class="CordosOperadores">*</button>
+            <button onclick="ToDisplay('1')">1</button>
+            <button onclick="ToDisplay('2')">2</button>
+            <button onclick="ToDisplay('3')">3</button>
+            <button onclick="ToDisplay('-')"Class="CordosOperadores">-</button>
+            <button onclick="Clear()"Class="CordosOperadores">C</button>
+            <button onclick="ToDisplay('0')">0</button>
+            <button onclick="ToDisplay('.')">.</button>
+            <button onclick="ToDisplay('+')" Class="CordosOperadores" >+</button>
+        </div>
+        <button id=" igual" onclick="Calculate()" style="border-radius: 30px;width: 90% ;float:center;">=</button>
+
+    </div>
+    <script src="CalcJS.js"></script>
+</body>
+</html>
